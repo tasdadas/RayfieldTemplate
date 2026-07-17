@@ -11,3 +11,5 @@ I will be making a template for Rayfield Gen2 soon, however you can learn to use
 You don't really need this script to make a Rayfield GUI, building this template was extremely easy and done in about 10 minutes.
 All this really does is just showcase the features of Rayfield and remove comments from the documentation snippets.
 I'm planning to add custom themes to this project, a Gen2 template, and other features.
+
+All of the interactive elements simply just print to the console once used.
