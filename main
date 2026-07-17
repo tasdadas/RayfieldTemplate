@@ -52,7 +52,7 @@ local Toggle = Main:CreateToggle({
 	CurrentValue = false,
 	Flag = "Toggle1",
 	Callback = function(Value)
-		if Value == true then
+		if Value then
 			print("Toggle Turned on.")
 		else
 			print("Toggle Turned off.")
@@ -65,7 +65,7 @@ local ColorPicker = Main:CreateColorPicker({
 	Color = Color3.fromRGB(255,255,255),
 	Flag = "ColorPicker1",
 	Callback = function(Value)
-		print("Color set to: ".. Value)
+		print("Color set to:", Value)
 	end
 })
 
@@ -97,9 +97,9 @@ local Dropdown = Main:CreateDropdown({
 	Options = {"Option 1", "Option 2"},
 	CurrentOption = {"Option 1"},
 	MultipleOptions = false,
-	Flag = "Dropdown1", 
+	Flag = "Dropdown1",
 	Callback = function(Options)
-		print("Option changed to: ".. Options)
+		print("Option changed to:", Options)
 	end,
 })
 
