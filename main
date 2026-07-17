@@ -1,0 +1,136 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+	Name = "Rayfield Template",
+	Icon = 0,
+	LoadingTitle = "Rayfield Interface Suite",
+	LoadingSubtitle = "by Sirius",
+	ShowText = "Rayfield",
+	Theme = "Default",
+
+	ToggleUIKeybind = "Q",
+
+	DisableRayfieldPrompts = false,
+	DisableBuildWarnings = false,
+
+
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nil,
+		FileName = "FileNameHere"
+	},
+
+	Discord = {
+		Enabled = false,
+		Invite = "noinvitelink",
+		RememberJoins = true
+	},
+
+	KeySystem = true,
+	KeySettings = {
+		Title = "Rayfield Template",
+		Subtitle = "Key System",
+		Note = "Key is password123",
+		FileName = "Key",
+		SaveKey = true,
+		GrabKeyFromSite = false,
+		Key = {"password123"}
+	}
+})
+
+local Main = Window:CreateTab("Main", 4483362458)
+
+local Button = Main:CreateButton({
+	Name = "Button Example",
+	Callback = function()
+		print("Button Pressed")
+	end,
+})
+
+local Toggle = Main:CreateToggle({
+	Name = "Toggle Example",
+	CurrentValue = false,
+	Flag = "Toggle1",
+	Callback = function(Value)
+		if Value == true then
+			print("Toggle Turned on.")
+		else
+			print("Toggle Turned off.")
+		end
+	end,
+})
+
+local ColorPicker = Main:CreateColorPicker({
+	Name = "Color Picker Example",
+	Color = Color3.fromRGB(255,255,255),
+	Flag = "ColorPicker1",
+	Callback = function(Value)
+		print("Color set to: ".. Value)
+	end
+})
+
+local Slider = Main:CreateSlider({
+	Name = "Slider Example",
+	Range = {0, 100},
+	Increment = 10,
+	Suffix = "Suffix Example",
+	CurrentValue = 10,
+	Flag = "Slider1",
+	Callback = function(Value)
+		print("Slider Changed to: ".. Value)
+	end,
+})
+
+local Input = Main:CreateInput({
+	Name = "Input Example",
+	CurrentValue = "",
+	PlaceholderText = "Input Placeholder Text Example",
+	RemoveTextAfterFocusLost = false,
+	Flag = "Input1",
+	Callback = function(Text)
+		print("Input Changed to: ".. Text)
+	end,
+})
+
+local Dropdown = Main:CreateDropdown({
+	Name = "Dropdown Example",
+	Options = {"Option 1", "Option 2"},
+	CurrentOption = {"Option 1"},
+	MultipleOptions = false,
+	Flag = "Dropdown1", 
+	Callback = function(Options)
+		print("Option changed to: ".. Options)
+	end,
+})
+
+local Keybind = Main:CreateKeybind({
+	Name = "Keybind Example",
+	CurrentKeybind = "E",
+	HoldToInteract = false,
+	Flag = "Keybind1",
+	Callback = function(Keybind)
+		print("Keybind was activated: ".. Keybind)
+	end,
+})
+
+local Section = Main:CreateSection("Section Example")
+local Label = Main:CreateLabel("Label Example", 4483362458, Color3.fromRGB(255, 255, 255), false)
+local Paragraph = Main:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"})
+local Divider = Main:CreateDivider()
+
+local Button = Main:CreateButton({
+	Name = "Kill Interface",
+	Callback = function()
+		Rayfield:Destroy()
+	end,
+})
+
+
+Rayfield:Notify({
+	Title = "Notification Example",
+	Content = "UI Loaded!",
+	Duration = 3,
+	Image = 4483362458,
+})
+
+Rayfield:LoadConfiguration()
