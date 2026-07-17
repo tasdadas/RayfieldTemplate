@@ -1,3 +1,5 @@
+# Read Me
+
 Official Rayfield Website: https://www.rayfield.gg/
 Doucmentation (Recommended): https://docs.sirius.menu/rayfield
 Anti Detection (Recommended): https://docs.sirius.menu/rayfield/anti-detection
