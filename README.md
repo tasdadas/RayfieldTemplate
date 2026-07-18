@@ -16,9 +16,9 @@ If you have any issues please let me know I am somewhat active on here!
 
 # Links ⛓️
 
-Official Rayfield Website: https://www.rayfield.gg/
-Official Rayfield Doucmentation (Recommended): https://docs.sirius.menu/rayfield
-Rayfield Anti Detection (Recommended): https://docs.sirius.menu/rayfield/anti-detection
-Rayfield Secure Mode: https://docs.sirius.menu/rayfield/secure-mode
-Official Rayfield Gen2 Documentation (Template Coming Soon): https://docs.sirius.menu/rayfield-gen2
+- Official Rayfield Website: https://www.rayfield.gg/
+- Official Rayfield Doucmentation (Recommended): https://docs.sirius.menu/rayfield
+- Rayfield Anti Detection (Recommended): https://docs.sirius.menu/rayfield/anti-detection
+- Rayfield Secure Mode: https://docs.sirius.menu/rayfield/secure-mode
+- Official Rayfield Gen2 Documentation (Template Coming Soon): https://docs.sirius.menu/rayfield-gen2
 
